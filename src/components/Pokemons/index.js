@@ -9,7 +9,7 @@ class Pokemons extends Component {
     };
 
     componentDidMount() {
-        axios.get('https://pokeapi.co/api/v2/pokemon?limit=897')
+        axios.get('https://pokeapi.co/api/v2/pokemon?limit=50')
             .then(response => response.data.results)
             .then(response => {
                 this.setState({

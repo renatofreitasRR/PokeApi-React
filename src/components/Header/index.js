@@ -7,9 +7,6 @@ class Header extends Component {
         return (
             <header>
                 <img src={pokeball} alt="pokeball" id="pokeball" />
-                {/* <div className="input-pokemon">
-                    <input type="text" />
-                </div> */}
                 <img src={logo} alt="pikachu" />
             </header>
         )

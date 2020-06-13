@@ -28,7 +28,7 @@ h1 {
     height: 400px;
     background-color: #c0e1f7;
     box-shadow: rgb(158, 158, 158) 10px 10px 10px 1px;
-    border-radius: 20px;
+    border-radius: 5px;
     margin: 10px 10px;
     color: #173365;
     font-size: 1.3rem;
@@ -37,6 +37,7 @@ h1 {
 }
 
 .pokemon:hover {
+    transition: 0.2s;
     cursor: pointer;
     transform: scale(1.05);
 }

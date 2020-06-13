@@ -12,6 +12,7 @@ class PokemonsCard extends Component {
     };
 
     componentDidMount() {
+
         axios.get(`https://pokeapi.co/api/v2/pokemon/${this.props.pokemonName}/`)
             .then(response => response.data)
             .then(response => {
@@ -23,7 +24,6 @@ class PokemonsCard extends Component {
 
     render() {
         const { sprites, name, types, abilities } = this.state.pokemonObject;
-
         return (
             <div className="pokemons-container">
                 <div className="pokemon">
@@ -31,8 +31,7 @@ class PokemonsCard extends Component {
                     <div className="content-pokemon" >
                         <div className="element" > {
                             types.map(type => {
-                                return (<small key={type.type.name} > {type.type.name} </small>
-                                )
+                                return (<small key={type.type.name} > {type.type.name} </small>)
                             })
                         }
                         </div>
